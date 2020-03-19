@@ -1,0 +1,27 @@
+.locDash {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: flex-start;
+  margin: 3rem -1% 0 -1%;
+}
+
+.wrapper-swb {
+  cursor: pointer;
+  margin: 0 1% 0 1%;
+}
+
+.alternative-text {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .locDash {
+    justify-content: space-between;
+    margin: 3rem 0 0 0;
+  }
+  .forecast-section {
+    margin: initial;
+  }
+}

@@ -1,0 +1,136 @@
+.wrapper {
+  margin: 3;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(1em + 1vw);
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
+.bottom-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.bottom-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom {
+  font-size: 1.8rem;
+}
+
+.bottom img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.dayName {
+  font-size: calc(1em + 2vw);
+  font-weight: bold;
+}
+.description {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.locationName {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+.minMax {
+  font-size: calc(1.5em + 3vw);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-right {
+  text-align: right;
+}
+
+.top-right img {
+  max-width: 60%;
+}
+
+.removeButton img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 8px;
+}
+.removeButton img:hover {
+  cursor: pointer;
+}
+.weatherBox-container {
+  background-color: #0566ce;
+  box-shadow: 0px 0px 20px #7f8589;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  /* height: 29rem; */
+  justify-content: space-around;
+  padding: 1rem 8rem 1rem 2rem;
+}
+
+@media (max-width: 1200px) {
+  .bottom,
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .weatherBox-container {
+    padding: 1rem 5rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .top-right img {
+    max-width: 80%;
+  }
+  .bottom,
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    flex-direction: column;
+  }
+
+  .top-right {
+    text-align: center;
+  }
+  .top-right img {
+    max-width: 70%;
+  }
+  .bottom-up,
+  .bottom-down {
+    flex-direction: column;
+  }
+  .weatherBox-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .bottom,
+  .description {
+    font-size: 1rem;
+  }
+}
